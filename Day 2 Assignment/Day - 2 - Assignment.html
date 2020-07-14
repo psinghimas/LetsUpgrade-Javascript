@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <title>Day 2 Assignment</title>
+        
+    </head>
+
+    <body>
+
+        <h1>Question 1 : Write a JavaScript program to display the current day and time in the following format.</h1>
+            <h3>Sample Output : Today is : Tuesday.<br>
+            Current time is : 10 PM : 30 : 38</h3>
+
+        <h2> Solution : </h2>
+
+
+            Today is : <b><p id="day"></p></b>
+
+            Current Time is is : <b><p id="localtime"></p></b>
+
+            <script>
+                var d = new Date();
+
+                var days = ["Sunday","Monday","Tuseday","Wednesday","Thursday","Friday","Saturday"];
+                document.getElementById("day").innerHTML = days[d.getDay()];
+
+
+                var t=new Date().toLocaleTimeString();
+                document.getElementById("localtime").innerHTML = t;
+               
+            </script>
+        
+
+        <h1>Question 2 : Write a JavaScript program to print the contents of the current window..</h1>
+
+        <h2>Answer</h2>
+
+        <p>Click the button to print the current page.</p>
+
+        <button onclick="window.print()">Print this page</button>
+        
+
+        <h1>Write a JavaScript program to get the current date. </h1>
+            <h3>Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy</h3>
+
+        <h2>Answer</h2>
+
+        <script>
+
+            var d = new Date();
+
+            var dd = d.getDate();
+            var mm = d.getMonth();
+            var year = d.getFullYear();
+
+            var today = mm+'-'+dd+'-'+year
+
+            document.write('1. format mm-dd-yyyy = '+today);
+
+            var today = mm+'/'+dd+'/'+year
+
+            document.write('<br>2. format mm/dd/yyyy = '+today);
+
+            var today = dd+'-'+mm+'-'+year
+
+            document.write('<br>3. format dd-mm-yyyy = '+today);
+
+            var today = dd+'/'+mm+'/'+year
+
+            document.write('<br>4. format dd/mm/yyyy = '+today);
+
+
+        </script>
+
+
+    </body>
+</html>

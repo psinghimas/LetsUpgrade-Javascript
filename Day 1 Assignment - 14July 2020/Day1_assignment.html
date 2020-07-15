@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Question 1 : Explore and explain the various methods in console function
+      Explain them Ex. console.log() console.warn(). etc...
+    </h1>
+    <br />
+    <h3>Answer : Check Console output</h3>
+    <script>
+      console.assert("asset explore"); //Writes an error message to the console if the assertion is false
+      console.log("hola"); //	Outputs a message to the console
+      console.clear(); //	Clears the console
+      console.count(); //	Logs the number of times that this particular call to count() has been called
+      console.count();
+      console.error("user error"); //	Outputs an error message to the console
+
+      console.log("Hello world!");
+      console.group(); //	Creates a new inline group in the console. This indents following console messages by an additional level, until console.groupEnd() is called
+      console.log("Hello again, this time inside a group!");
+
+      console.info("hiiiiii"); //	Outputs an informational message to the console
+      console.table(["Jalandhar", "Ludhiana", "Amritsar"]); //	Displays tabular data as a table
+
+      console.time(); //Starts a timer (can track how long an operation takes)
+      console.timeEnd(); //	Stops a timer that was previously started by console.time()
+
+      console.warn("Hey be aware of warning"); //Outputs a warning message to the console
+    </script>
+
+    <br /><br /><br />
+    <h1>
+      Question 2 : Write the difference between var, let and const with code
+      examples.
+    </h1>
+    <br />
+    <h3>Answer : Check Console output</h3>
+
+    <script>
+      //"var" used to declare variable at different scope globally or function/locally scoped. var variables can be re-declared and updated.
+
+      var greet = "hi how are you"; // "hi how are you"
+      document.write(greet);
+
+      var greet = "I am good thanks"; //"I am good thanks"
+      document.write("<br>" + greet);
+
+      //  "let" is now preferred for variable declaration. "let" is block scoped and its a chunk of code bounded by {}
+
+      {
+        var a = "Hi";
+
+        if (true) {
+          let a = "namaste";
+          console.log(a); // "namaste"
+        }
+        console.log(a);
+      } // "Hi"
+
+      // "const" maintain constant values
+
+      const b = "Hi";
+      b = "namaste"; // error: Assignment to constant variable.
+    </script>
+
+    <br /><br /><br />
+    <h1>
+      Question 3 : Write a brief intro on available data types in Javascript.
+    </h1>
+    <br />
+    <h3>Answer : Check Console output</h3>
+
+    <script>
+      var a; // Now a is undefined
+      a = 5; // Now a is a Number
+      a = "John"; // Now a is a String
+      a = true; // Now a is a Boolean
+    </script>
+  </body>
+</html>

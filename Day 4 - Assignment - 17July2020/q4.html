@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Question 4 : Make a Calculator in Javascript which can do operations as
+      Addtion, Subtraction, Multiplication, Division, Square root, Percentage.
+    </h1>
+
+    <script>
+      let a = prompt("Enter 1st numeric Value : ");
+      let b = prompt("Enter 2nd numeric Value : ");
+      let c = prompt(
+        "Enter operation:<br>1 = ADD, 2 = Subtract, 3 = Multiply, 4 = Divide"
+      );
+
+      switch (Number(c)) {
+        case 1:
+          document.write(
+            "Addition of " +
+              a +
+              " and " +
+              b +
+              " is equal to " +
+              (Number(a) + Number(b))
+          );
+          break;
+        case 2:
+          document.write(
+            "Subtraction of " +
+              a +
+              " and " +
+              b +
+              " is equal to " +
+              (Number(a) - Number(b))
+          );
+          break;
+        case 3:
+          document.write(
+            "Multiplication of " +
+              a +
+              " and " +
+              b +
+              " is equal to " +
+              Number(a) * Number(b)
+          );
+          break;
+        case 4:
+          document.write(
+            "Division of " +
+              a +
+              " and " +
+              b +
+              " is equal to " +
+              Number(a) / Number(b)
+          );
+          break;
+      }
+    </script>
+  </body>
+</html>
